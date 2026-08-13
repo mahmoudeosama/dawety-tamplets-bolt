@@ -1,0 +1,142 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        amiri: ['Amiri', 'serif'],
+        cormorant: ['"Cormorant Garamond"', 'serif'],
+        vibes: ['"Great Vibes"', 'cursive'],
+        reem: ['"Reem Kufi"', 'sans-serif'],
+        marcellus: ['Marcellus', 'serif'],
+        tangerine: ['Tangerine', 'cursive'],
+        cinzel: ['Cinzel', 'serif'],
+        sc: ['"Cormorant SC"', 'serif'],
+        messiri: ['"El Messiri"', 'sans-serif'],
+      },
+      colors: {
+        royal: {
+          obsidian: '#0a0807',
+          gold: '#c8a951',
+          goldLight: '#e6cf8a',
+          goldDeep: '#8a6f2e',
+        },
+        emerald: {
+          deep: '#0a1f18',
+          mid: '#123a2c',
+          gold: '#d4b876',
+        },
+        silk: {
+          burgundy: '#180914',
+          burgundyLight: '#2a121f',
+          rose: '#c79a8a',
+          roseGold: '#b76e79',
+        },
+        pearl: {
+          ivory: '#f5efdf',
+          cream: '#fbf7ec',
+          gold: '#c8a951',
+          goldSoft: '#e0c97f',
+        },
+        obsidian: {
+          black: '#08080a',
+          graphite: '#141416',
+          gold: '#d4af37',
+          white: '#f5f5f7',
+        },
+        sapphire: {
+          deep: '#0a1428',
+          mid: '#0e1e3a',
+          blue: '#1a3a6e',
+          silver: '#c0c8d4',
+          silverLight: '#e0e6f0',
+        },
+        sepia: {
+          dark: '#2a1e10',
+          mid: '#4a3520',
+          light: '#6b5238',
+          parchment: '#d4c4a8',
+          ink: '#3a2810',
+        },
+        ruby: {
+          deep: '#1a0508',
+          mid: '#2a0a10',
+          red: '#6b0a1a',
+          roseGold: '#b76e79',
+          light: '#d4a0a8',
+        },
+        frost: {
+          dark: '#0a0e14',
+          mid: '#101820',
+          glass: '#1a2838',
+          gold: '#d4af37',
+          goldLight: '#e8d090',
+        },
+        moroccan: {
+          deep: '#0e2a26',
+          mid: '#1a3a32',
+          teal: '#2a8070',
+          terracotta: '#c4633a',
+          gold: '#d4a060',
+        },
+        platinum: {
+          white: '#f0ece4',
+          cream: '#f8f5ee',
+          champagne: '#d4c4a0',
+          gold: '#c0a060',
+          goldLight: '#e0d0a0',
+        },
+        sage: {
+          deep: '#1a2a20',
+          mid: '#2a3a30',
+          sage: '#6a8a70',
+          rose: '#d4a0a8',
+          cream: '#e8e0d0',
+        },
+        lilac: {
+          deep: '#1a1420',
+          mid: '#2a2038',
+          lilac: '#8a7aa8',
+          gold: '#c0b070',
+          light: '#d0c0e0',
+        },
+        onyx: {
+          black: '#050505',
+          graphite: '#0e0e0e',
+          gold: '#d4af37',
+          goldLight: '#e8d090',
+          white: '#e0e0e0',
+        },
+        crimson: {
+          deep: '#1a0510',
+          mid: '#2a0a18',
+          red: '#8a0a20',
+          gold: '#d4a060',
+          goldLight: '#e8c890',
+        },
+      },
+      animation: {
+        'spin-slow': 'spin 24s linear infinite',
+        'float-slow': 'float 6s ease-in-out infinite',
+        'shimmer': 'shimmer 3s linear infinite',
+        'fall': 'fall 9s linear infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-14px)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% center' },
+          '100%': { backgroundPosition: '200% center' },
+        },
+        fall: {
+          '0%': { transform: 'translateY(-10vh) rotate(0deg)', opacity: '0' },
+          '10%': { opacity: '0.9' },
+          '100%': { transform: 'translateY(110vh) rotate(360deg)', opacity: '0' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
